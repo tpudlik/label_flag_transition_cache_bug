@@ -1,0 +1,25 @@
+load("//:transition.bzl", "binary_with_flag")
+
+label_flag(
+    name = "label_flag",
+    build_setting_default = "empty_library",
+)
+
+cc_binary(
+    name = "hello",
+    srcs = ["main.cc"],
+    deps = [":label_flag"],
+)
+
+binary_with_flag(
+    name = "hello_with_flag_set",
+    binary = ":hello",
+)
+
+cc_library(
+    name = "empty_library",
+)
+
+cc_library(
+    name = "other_library",
+)

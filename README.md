@@ -19,7 +19,7 @@ Repro steps:
 
     This is expected, all is good.
 
-2.  Change line 12 in transition.bzl from:
+2.  Change line 6 in transition.bzl from:
 
     ```
     "//:label_flag": "//:other_library",

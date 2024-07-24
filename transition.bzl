@@ -1,9 +1,3 @@
-# Additional flags specific to the upstream Pigweed RP2040 platform.
-_rp2040_flags = {
-    "//command_line_option:platforms": "@pigweed//targets/rp2040",
-}
-# LINT.ThenChange(//.bazelrc)
-
 def _transition_impl(settings, attr):
     # buildifier: disable=unused-variable
     _ignore = settings, attr

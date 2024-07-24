@@ -9,7 +9,7 @@ def _transition_impl(settings, attr):
     _ignore = settings, attr
     return {
         # The next line is the one to change, see README.
-        "//:label_flag": "//:empty_library",
+        "//:label_flag": "//:other_library",
     }
 
 _transition = transition(
